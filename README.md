@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/K-ost/Multi-step-form](https://github.com/K-ost/Multi-step-form)
-- Live Site URL: [https://k-ost.github.io/Multi-step-form/](https://k-ost.github.io/Multi-step-form/)
+- Live Site URL: [https://k-ost.github.io/multi-step-form/](https://k-ost.github.io/multi-step-form/)
 
 ## My process
 
