@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --color-marine-blue: hsl(213, 96%, 18%);
+  --color-purplish-blue: hsl(243, 100%, 62%);
+  --color-pastel-blue: hsl(228, 100%, 84%);
+  --color-light-blue: hsl(206, 94%, 87%);
+  --color-strawberry-red: hsl(354, 84%, 57%);
+  --color-cool-gray: hsl(231, 11%, 63%);
+  --color-light-gray: hsl(229, 24%, 87%);
+  --color-magnolia: hsl(217, 100%, 97%);
+  --color-alabaster: hsl(231, 100%, 99%);
+  --color-white: hsl(0, 0%, 100%);
+  --ff: 'Ubuntu', sans-serif;
+  --container: 940px;
+  --fs: 16px;
+  --gap: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--color-magnolia);
+  font-family: var(--ff);
+  font-size: var(--fs);
+  line-height: 24px;
+  margin: 0;
+}
+h1 {
+  color: var(--color-marine-blue);
+  font-size: 32px;
+  margin: 0 0 10px;
+}
+
+
+// Grid
+.container {
+  margin: 0 auto;
+  max-width: var(--container);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--gap) / 2 * -1);
+  margin-right: calc(var(--gap) / 2 * -1);
+}
+[class*='col'] {
+  padding-left: calc(var(--gap) / 2);
+  padding-right: calc(var(--gap) / 2);
+  width: 100%;
+}
+
+$col: 100% / 12;
+@media screen and (min-width: 900px) {
+  .col-lg-4 {
+    flex: 0 0 $col * 4;
+    max-width: $col * 4;
+  }
+}
+
+/* app */
+.app {
+  background: var(--color-white);
+  border-radius: 15px;
+  box-shadow: 0 2px 14px var(--color-light-blue);
+  padding: 15px 0 15px 15px;
+  display: flex;
+  width: 100%;
+  &-content {
+    flex: 1;
+    padding: 60px 100px 34px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {display: block; padding: 0 0 90px;}
+  h1 {font-size: 26px;}
+  .app {
+    background: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    width: auto;
+    &-content {
+      background: var(--color-white);
+      border-radius: 15px;
+      box-shadow: 0 1px 8px var(--color-light-gray);
+      margin: -70px 15px 0;
+      padding: 30px 20px 20px;
+    }
+  }
+}
