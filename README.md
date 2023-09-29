@@ -59,7 +59,7 @@ Users should be able to:
 
 ## Acknowledgments
 
-This is my own project I developed by myself. Of course, I know this project might have been developed without using React-router-dom and redux. But it seemed to be convenient to me.
+This is my own project I developed by myself. Of course, I know this project could have been done without using React-router-dom and redux. But it seemed to be convenient to me.
 
 ## Available Scripts
 
